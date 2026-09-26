@@ -20,7 +20,7 @@ export default function ProfilePage() {
       const formData = new FormData();
       formData.append("cv", file);
 
-      const response = await fetch("http://localhost:3001/api/users/me/cv", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/users/me/cv`, {
         method: "POST",
         body: formData,
       });
@@ -50,7 +50,7 @@ export default function ProfilePage() {
     setUploading(true);
     setError("");
     try {
-      const response = await fetch("http://localhost:3001/api/users/me/profile", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/users/me/profile`, {
   method: "PUT",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({ baseProfileText: profileText }),

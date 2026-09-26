@@ -46,7 +46,7 @@ export default function Home() {
   };
   const handleSave = async () => {
     try {
-      await fetch("http://localhost:3001/api/users/me/settings", {
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/users/me/settings`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ jobSearchKeywords: keywords, jobSearchLocations: locations, jobSearchSources: sources }),

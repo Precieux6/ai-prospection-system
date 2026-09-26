@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tsx watch src/main.ts",
+    "build": "tsc",
     "start": "node dist/main.js"
   },
   "dependencies": {
@@ -14,10 +15,10 @@
     "@repo/storage": "workspace:*",
     "@repo/email": "workspace:*",
     "dotenv": "^16.4.5",
-    "node-cron": "^3.0.3"
+    "node-cron": "^3.0.3",
+    "tsx": "^4.19.0"
   },
   "devDependencies": {
-    "tsx": "^4.19.0",
     "typescript": "^5.5.0",
     "@types/node-cron": "^3.0.11"
   }
