@@ -12,6 +12,13 @@
     "db:generate": "turbo run db:generate --filter=@repo/db",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "reflect-metadata": "^0.1.14",
+    "rxjs": "^7.8.1"
+  },
   "devDependencies": {
     "prettier": "^3.2.5",
     "turbo": "^2.0.6",
@@ -20,5 +27,10 @@
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
+  },
+  "pnpm": {
+    "overrides": {
+      "esbuild": "0.19.12"
+    }
   }
 }
