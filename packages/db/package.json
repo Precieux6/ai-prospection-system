@@ -1,0 +1,21 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.33.0",
+    "postgres": "^3.4.4",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.24.0",
+    "typescript": "^5.5.0"
+  }
+}
