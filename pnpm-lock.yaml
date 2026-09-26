@@ -241,6 +241,9 @@ importers:
       cheerio:
         specifier: ^1.0.0
         version: 1.2.0
+      puppeteer:
+        specifier: ^23.0.0
+        version: 23.11.1(typescript@5.9.3)
       puppeteer-extra:
         specifier: ^3.3.6
         version: 3.3.6(puppeteer-core@23.11.1)(puppeteer@23.11.1(typescript@5.9.3))

@@ -1,7 +1,6 @@
 import puppeteer from "puppeteer";
 
-export async function fetchHtml(url: string): Promise<string> {
-  const browser = await puppeteer.launch({
+export async function fetchHtml(url: string, options?: any): Promise<string> {  const browser = await puppeteer.launch({
     headless: true,
     args: [
       "--no-sandbox",
